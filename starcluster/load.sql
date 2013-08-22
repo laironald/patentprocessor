@@ -80,7 +80,7 @@ SET SESSION tx_isolation='READ-UNCOMMITTED';
 SET innodb_lock_wait_timeout = 500;
 SET autocommit=0; 
 
-SELECT "citation";
+SELECT "claim";
 LOAD DATA LOCAL INFILE 'new/claim.txt' INTO TABLE uspto_new.claim FIELDS TERMINATED by '\t' ENCLOSED BY '\"';
 
 COMMIT;
